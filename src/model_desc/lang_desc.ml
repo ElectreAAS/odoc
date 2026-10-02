@@ -337,7 +337,7 @@ and typedecl_field =
     [
       F ("id", (fun t -> t.id), identifier);
       F ("doc", (fun t -> t.doc), docs);
-      F ("mutable_", (fun t -> t.mutable_), bool);
+      F ("mutability", (fun t -> t.mutability), Lang.TypeDecl.mutability);
       F ("type_", (fun t -> t.type_), typeexpr_t);
       F ("modalities", (fun t -> t.modalities), List string);
     ]
